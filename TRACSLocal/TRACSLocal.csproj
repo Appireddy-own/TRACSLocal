@@ -134,6 +134,7 @@
     <Content Include="Views\ABSForm\CreateABSForm.cshtml" />
     <Content Include="Views\Shared\_ABSFormDataGrid.cshtml" />
     <Content Include="Views\ABSForm\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\TRACSAppTest - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
