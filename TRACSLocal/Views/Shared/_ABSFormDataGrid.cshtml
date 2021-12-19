@@ -1,0 +1,48 @@
+﻿
+<div>
+    @model TRACSLocal.Models.ABSFormData
+
+    @if (@Model != null)
+    {
+        <br />
+        <br />
+
+        <table id="tblGrid" style="border:2px solid black;">
+            <thead>
+                <tr >
+                    <th style="border:1px solid black;">Project Name</th>
+                    &nbsp;
+                    <th style="border:1px solid black;">Issuer Name</th>
+                    &nbsp;
+
+                    <th style="border:1px solid black;">Sponsor Name</th>
+                    &nbsp;
+
+                    <th style="border:1px solid black;">Deal Contacts</th>
+                    &nbsp;
+
+                    <th style="border:1px solid black;">Size of Distribution</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var data in @Model.Griddata)
+                {
+                <tr>
+                    <td style="border:1px solid black;">@data.ProjectName </td>
+                    &nbsp;
+                    <td style="border:1px solid black;">@data.IssuerName </td>
+                    &nbsp;
+                    <td style="border:1px solid black;">@data.SponsorName </td>
+                    &nbsp;
+                    <td style="border:1px solid black;">@data.DealContacts </td>
+                    &nbsp;
+                    <td style="border:1px solid black;">@data.SizeofDistribution </td>
+                </tr>
+
+                }
+
+            </tbody>
+        </table>
+    }
+</div>

@@ -1,0 +1,16 @@
+﻿@model TRACSLocal.Models.ABSFormData
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h1>ABS Form Data</h1>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<p>
+    @Html.Partial("_ABSFormDataGrid",Model)
+    @Html.ActionLink("Create Form", "CreateABSForm")
+</p>
