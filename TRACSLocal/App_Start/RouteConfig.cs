@@ -12,11 +12,11 @@ namespace TRACSLocal
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapPageRoute("Backup", "{*anything}", "~/TRACSHome.aspx");
+           // routes.MapPageRoute("WebFormDefault", "", "~/TRACSHome.aspx");
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "ABSForm", action = "CreateABSForm", id = UrlParameter.Optional }
+                defaults: new { controller = "ABSForm", action = "RedirectToAspx", id = UrlParameter.Optional }
             );
         }
     }
